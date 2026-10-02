@@ -1,0 +1,16 @@
+name: CI
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Python syntax
+        run: python -m compileall -q fraud_detector interface
+      - name: Check Compose config
+        run: docker compose config -q
+      - name: Build images
+        run: docker compose build

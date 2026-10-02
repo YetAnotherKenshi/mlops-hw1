@@ -1,0 +1,3 @@
+transaction_time,amount,lat,lon,merchant_lat,merchant_lon,gender,merch,cat_id,one_city,us_state,jobs,population_city,name_1,name_2,street,post_code
+2024-01-01 12:30:00,100,40.7,-74.0,40.71,-74.01,M,shop,shopping,city,NY,engineer,100000,John,Smith,Main Street,10001
+2024-01-01 12:31:00,100000,40.7,-74.0,40.71,-74.01,F,shop,shopping,city,NY,engineer,100000,Jane,Smith,Main Street,10001
